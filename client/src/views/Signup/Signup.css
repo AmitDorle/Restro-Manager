@@ -1,28 +1,57 @@
-.form-container{
-    background-color: #fcd27c;
-    width: 400px;
-    padding: 20px;
-    border-radius: 8px;
-    margin: 0 auto;
-  }
-  
-  .user-input{
-   display: block;
-   width: 300px;
-   border-radius: 8px;
-   border: 1px solid #ccc;
-   font-size: 25px;
-   padding-left: 10px;
-  }
-  
-  .signup-button{
-    font-size: 25px;
-    background-color: #7c8bfc;
-    color: white;
-    margin: 10px;
-    border-radius: 8px;
-    border: 1px solid white;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.Main-signup-container {
+  display: flex;
+  justify-content: center;
+}
+.Signup-head
+{
+    text-align: center;
+    margin: 2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.signup-container {
+  margin-top: 20px;
+  padding: 5px;
+  width: 400px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  box-shadow: 0px 0px 2px 2px black;
+  border: red double 5px;
+}
+
+.welcome-text {
+  color: #ffbb33;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+}
+
+.user-input {
+  width: 350px;
+  height: 50px;
+  border-radius: 10px;
+  border: 2px rgb(27, 84, 56) solid;
+}
+
+.form-containerr {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: center;
+  margin-top: 2px;
+}
+
+.sign-up-button-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.sign-up-button {
+  margin-top: 5px;
+  width: 350px;
+  height: 50px;
+  border-radius: 10px;
+  border: red double 2px;
+  background-color: #ffcc00;
+}
