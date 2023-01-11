@@ -78,7 +78,7 @@ function Signup() {
                     type="text"
                     id="name"
                     placeholder="Enter Name"
-                    className="user-input"
+                    className="user-input form-control"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                   />
@@ -90,7 +90,7 @@ function Signup() {
                     type="email"
                     id="email"
                     placeholder="Enter Email"
-                    className="user-input"
+                    className="user-input form-control"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                   />
@@ -102,7 +102,7 @@ function Signup() {
                     type="text"
                     id="phone"
                     placeholder="Enter Phone"
-                    className="user-input"
+                    className="user-input form-control"
                     value={phone}
                     onChange={(e) => setPhone(e.target.value)}
                   />
@@ -114,7 +114,7 @@ function Signup() {
                     type="password"
                     id="password"
                     placeholder="Enter Password"
-                    className="user-input"
+                    className="user-input form-control"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                   />

@@ -1,7 +1,7 @@
-body{
+/* body{
     background: rgb(238, 174, 202);
     background: radial-gradient(circle, rgb(206, 152, 147), rgb(214, 202, 224) 100%);
-}
+} */
 .Main-login-container
 {
     display: flex;
@@ -34,11 +34,10 @@ body{
     text-align: center;
 }
 
-.input-box
+.user-input
 {
     width: 350px;
     height: 60px;
-    border-radius: 10px;
     border: 2px rgb(27, 84, 56) solid;
 }
 .emoji
@@ -64,15 +63,14 @@ body{
 {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
 }
 
 .sign-in-button
 {
     width: 350px;
-    height: 60px;
+    height: 50px;
     border-radius: 10px;
-    border: red double 2px;
+    border: red solid 2px;
     background-color: #ffcc00;
 }
 

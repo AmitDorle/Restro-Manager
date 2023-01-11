@@ -62,17 +62,17 @@ function Login() {
                 <div>
                     <p className="welcome-text">WELCOME BACK</p>
                 </div>
-                <div className="text-center emoji">
+                <span className="text-center emoji">
                     😃
-                </div>
+                </span>
                 <div className="m-4">
                     <h2 className="Signin-head">
                         Sign In to
                         Your Account</h2>
                 </div>
-                <div>
+                {/* <div>
                     <p className="text-center">Let's get you signed in and straight to the Food.</p>
-                </div>
+                </div> */}
                 <div className="form-container m-3">
                     <form>
                     <h6>Email: </h6>
@@ -80,7 +80,7 @@ function Login() {
                     type="email"
                     id="email"
                     placeholder="Enter Email"
-                    className="user-input"
+                    className="user-input form-control"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                   />
@@ -89,7 +89,7 @@ function Login() {
                     type="password"
                     id="password"
                     placeholder="Enter Password"
-                    className="user-input"
+                    className="user-input form-control"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                   />
@@ -104,13 +104,14 @@ function Login() {
                 <div className="sign-in-button-container">
                     <button type="button" class="sign-in-button" onClick={loginUser}><b>Login</b></button>
                 </div>
-            </div>
-            <div className="sign-up-link-section">
+                <div className="sign-up-link-section">
                 <div>
                     <p>Don;t have an account?</p>
                 </div>
                 <div><Link to="/Signup">Sign up and get started!</Link></div>
             </div>
+            </div>
+            
         </div>
     </div>
       </div>

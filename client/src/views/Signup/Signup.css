@@ -29,7 +29,6 @@
 .user-input {
   width: 350px;
   height: 50px;
-  border-radius: 10px;
   border: 2px rgb(27, 84, 56) solid;
 }
 
@@ -44,7 +43,6 @@
 .sign-up-button-container {
   display: flex;
   justify-content: center;
-  margin-bottom: 5px;
 }
 
 .sign-up-button {
