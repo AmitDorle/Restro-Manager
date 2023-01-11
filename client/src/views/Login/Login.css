@@ -7,10 +7,15 @@ body{
     display: flex;
     justify-content: center;
 }
-
+.Signin-head
+{
+    text-align: center;
+    margin: 2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 .login-container
 {
-    margin-top: 50px;
+    margin-top: 20px;
     padding: 5px;
     width: 400px;
     background-color: white;
@@ -36,7 +41,10 @@ body{
     border-radius: 10px;
     border: 2px rgb(27, 84, 56) solid;
 }
-
+.emoji
+{
+    font-size: 50px;
+}
 
 .form-container
 {
