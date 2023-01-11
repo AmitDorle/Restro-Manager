@@ -55,25 +55,64 @@ function Login() {
        </div>
 
        <div className='col-md-6'>
-        <div className='form-container'>
-          <form>
-           <div>
-              <label htmlFor='email'>Email: </label>
-              <input type='email' id='email' placeholder='Enter Email' className='user-input'
-              value={email} onChange={(e) => setEmail(e.target.value)}/>
-           </div>
-
-           <div>
-              <label htmlFor='password'>Password: </label>
-              <input type='password' id='password' placeholder='Enter Password' className='user-input'
-              value={password} onChange={(e) => setPassword(e.target.value)}/>
-           </div>
-
-            <div>
-              <button type='button' className='login-button' onClick={loginUser}>Login</button>
+       <div className="Main-login-container">
+        <div>
+            <div className="login-container">
+                <div>
+                    <p className="welcome-text">WELCOME BACK</p>
+                </div>
+                <div className="text-center">
+                    😃
+                </div>
+                <div className="m-3">
+                    <h2 className="Signup-head">
+                        Sign
+                        In to
+                        Your Account</h2>
+                </div>
+                <div className="m-1">
+                    <p className="text-center">Let's get you signed in and straight to the jobs.</p>
+                </div>
+                <div className="form-container m-3">
+                    <form>
+                    <h6>Email: </h6>
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter Email"
+                    className="user-input"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                  />
+                        <h6>Password: </h6>
+                  <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter Password"
+                    className="user-input"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                  />
+                    </form>
+                </div>
+                <div className="for-pass-container m-3">
+                    <div>
+                        <input type="checkbox" />Remember me
+                    </div>
+                    <div> <a href="/pages/forget-password.html">Forgot your password?</a></div>
+                </div>
+                <div className="sign-in-button-container">
+                    <button type="button" class="sign-in-button" onClick={loginUser}><b>Sign In</b></button>
+                </div>
             </div>
-          </form>
+            <div className="sign-up-link-section">
+                <div>
+                    <p>Don;t have an account?</p>
+                </div>
+                <div><a href="/pages/Sign-Up.html">Sign up and get started!</a></div>
+            </div>
         </div>
+    </div>
       </div>
       </div>
     </div>
