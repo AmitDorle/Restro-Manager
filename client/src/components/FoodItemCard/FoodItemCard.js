@@ -27,8 +27,9 @@ function FoodItemCard({ category, description, imgUrl, price, title }) {
         </div>
         <h3>{title}</h3>
         <p>{description || title}</p>
-        <p>{price}/- Only</p>
         <span>{category}</span>
+        <p>{price}/- Only</p>
+        
 
         <div className='quantity-btn-container'>
           <span className='qnt-btn' onClick={(e)=>{setQuantity(quantity-1)}}>-</span>
