@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import './FoodItemCard.css'
+import swal from 'sweetalert'
 
 function FoodItemCard({ category, description, imgUrl, price, title }) {
 
@@ -17,6 +18,12 @@ function FoodItemCard({ category, description, imgUrl, price, title }) {
    existingList.push(listObject)
 
    localStorage.setItem('list', JSON.stringify(existingList))
+
+   await swal({
+      title: "Added to List",
+      icon: "success",
+   })
+   window.location.reload()
   }
 
   return (
@@ -27,9 +34,8 @@ function FoodItemCard({ category, description, imgUrl, price, title }) {
         </div>
         <h3>{title}</h3>
         <p>{description || title}</p>
-        <span>{category}</span>
         <p>{price}/- Only</p>
-        
+        <span>{category}</span>
 
         <div className='quantity-btn-container'>
           <span className='qnt-btn' onClick={(e)=>{setQuantity(quantity-1)}}>-</span>
