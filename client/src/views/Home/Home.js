@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import axios from 'axios'
 import './Home.css'
-import FoodItemCard from './../../components/FoodItemCard/FoodItemCard'
+import FoodItemCard from '../../components/FoodItemCard/FoodItemCard'
 
 import {currentUser} from './../../util/currentUser'
 
